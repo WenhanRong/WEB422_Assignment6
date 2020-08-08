@@ -8,15 +8,15 @@ import { PostsTableComponent } from './posts-table/posts-table.component';
 import { EditPostComponent } from './edit-post/edit-post.component';
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
+    { path: 'admin', component: PostsTableComponent},
+    { path: 'admin/post/:id', component: EditPostComponent},
+    { path: 'admin/newPost', component:EditPostComponent},
     { path: 'blog', component: BlogComponent },
     //{ path: 'post', component: PostComponent },
     { path: 'post/:id', component: PostComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '**', component: PageNotFoundComponent },
-    { path: 'admin', component: PostsTableComponent},
-    { path: 'admin/post/:id', component: EditPostComponent},
-    { path: 'admin/newPost', component:EditPostComponent},
+    { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
