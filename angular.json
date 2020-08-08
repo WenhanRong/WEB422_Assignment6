@@ -46,7 +46,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.css"
@@ -145,5 +146,5 @@
         }
       }
     }},
-  "defaultProject": "web422-a4"
+  "defaultProject": "web422-a6"
 }
