@@ -12,7 +12,8 @@ const perPage: number = 6;
 })
 export class PostService {
 
-  APIURL: string = environment.APIURL;
+  //APIURL: string = environment.APIURL;
+  APIURL: string = 'https://secure-shore-88714.herokuapp.com/api';
 
   constructor(private http: HttpClient) { }
 
